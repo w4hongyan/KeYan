@@ -4,9 +4,9 @@ services:
   db:
     image: postgres:13
     environment:
-      POSTGRES_DB: keyan_db
-      POSTGRES_USER: keyan_user
-      POSTGRES_PASSWORD: keyan_password
+      POSTGRES_DB: ${POSTGRES_DB:-keyan_db}
+      POSTGRES_USER: ${POSTGRES_USER:-keyan_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-CHANGE_THIS_PASSWORD}
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -27,10 +27,10 @@ services:
       - db
       - redis
     environment:
-      - DEBUG=False
-      - DATABASE_URL=postgresql://keyan_user:keyan_password@db:5432/keyan_db
-      - REDIS_URL=redis://redis:6379/0
-      - SECRET_KEY=your-secret-key-change-this
+      - DEBUG=${DEBUG:-False}
+      - DATABASE_URL=${DATABASE_URL:-postgresql://keyan_user:CHANGE_THIS_PASSWORD@db:5432/keyan_db}
+      - REDIS_URL=${REDIS_URL:-redis://redis:6379/0}
+      - SECRET_KEY=${SECRET_KEY:-CHANGE_THIS_SECRET_KEY}
     volumes:
       - ./media:/app/media
       - ./static:/app/static

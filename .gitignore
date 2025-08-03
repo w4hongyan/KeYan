@@ -68,25 +68,129 @@ dist/
 build/
 *.tsbuildinfo
 
-# Environment variables
+# Environment variables and secrets
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.envrc
+.env.*.local
+*.env
+secrets.yml
+secrets.yaml
+config/secrets.yml
+config/secrets.yaml
+secret.txt
+secret.json
+secrets.json
+key.txt
+private.key
+private.pem
+public.pem
+certificate.pem
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.p8
+*.p12
+*.pfx
+jwt.key
+jwt.pub
+jwt_secret.txt
+jwt_public.pem
+jwt_private.pem
+oauth_secret.txt
+api_key.txt
+api_secret.txt
+credentials.json
+service-account.json
+service_account.json
+google-credentials.json
+gcp-key.json
+aws-credentials.json
+aws_access_key.txt
+aws_secret_key.txt
+azure_credentials.json
+azure_key.json
+aliyun_credentials.json
+tencent_credentials.json
 
 # Docker
 .dockerignore
+.docker/
+docker-compose.override.yml
 
-# Logs
+# Logs and sensitive data
 logs/
 *.log
+*.log.*
+log/
+logs/
+*.log
+error.log
+access.log
+debug.log
+security.log
+audit.log
+django.log
+application.log
+*.log.gz
+*.log.1
+*.log.2
+*.log.old
 
-# Runtime data
+# Runtime data and sensitive cache
 pids
 *.pid
 *.seed
 *.pid.lock
+*.session
+*.session.sql
+*.sqlite
+*.sqlite3-journal
+*.db-journal
+*.db-shm
+*.db-wal
+*.db
+*.mdb
+*.accdb
+*.frm
+*.ibd
+*.myd
+*.myi
+*.db
+*.sql
+*.sql.gz
+*.sql.bak
+*.sql.backup
+*.dump
+*.dump.gz
+*.backup
+*.bak
+*.old
+*.orig
+*.rej
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+.directory
+*.lock
+*.lockfile
 
 # Coverage directory used by tools like istanbul
 coverage/
