@@ -1,0 +1,74 @@
+[
+  {
+    "model": "community.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Python",
+      "color": "#3776ab",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "community.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Django",
+      "color": "#092e20",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "community.tag",
+    "pk": 3,
+    "fields": {
+      "name": "React",
+      "color": "#61dafb",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "community.tag",
+    "pk": 4,
+    "fields": {
+      "name": "数据库",
+      "color": "#336791",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "community.tag",
+    "pk": 5,
+    "fields": {
+      "name": "机器学习",
+      "color": "#ff6b6b",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "community.tag",
+    "pk": 6,
+    "fields": {
+      "name": "数据分析",
+      "color": "#4ecdc4",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "community.tag",
+    "pk": 7,
+    "fields": {
+      "name": "论文写作",
+      "color": "#45b7d1",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "community.tag",
+    "pk": 8,
+    "fields": {
+      "name": "文献管理",
+      "color": "#96ceb4",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  }
+]

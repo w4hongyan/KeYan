@@ -1,0 +1,47 @@
+Django==4.2.7
+djangorestframework==3.14.0
+django-cors-headers==4.3.1
+django-filter==23.3
+django-extensions==3.2.3
+Pillow==10.0.1
+python-decouple==3.8
+redis==5.0.1
+celery==5.3.4
+channels==4.0.0
+channels-redis==4.1.0
+
+# 生物信息学相关
+biopython==1.83
+requests==2.31.0
+xmltodict==0.13.0
+
+# 翻译相关
+baidu-aip==4.16.10
+
+# 文件处理
+python-magic==0.4.27
+python-magic-bin==0.4.14
+PyPDF2==3.0.1
+reportlab==4.0.7
+fpdf2==2.7.6
+
+# 数据库
+psycopg2-binary==2.9.9
+
+# 开发工具
+django-debug-toolbar==4.2.0
+pytest==7.4.3
+pytest-django==4.7.0
+
+# 异步任务
+aioredis==2.0.1
+asyncio==3.4.3
+aiohttp==3.9.1
+aiofiles==23.2.1
+
+# 日志
+python-json-logger==2.0.7
+
+# 测试
+factory-boy==3.3.0
+faker==20.1.0

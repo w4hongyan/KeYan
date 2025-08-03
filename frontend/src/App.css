@@ -1,0 +1,13 @@
+/* App全局样式 */
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .site-layout-content {
+    padding: 16px;
+  }
+}

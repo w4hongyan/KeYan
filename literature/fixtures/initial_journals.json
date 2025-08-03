@@ -1,0 +1,52 @@
+[
+  {
+    "model": "literature.journal",
+    "pk": 1,
+    "fields": {
+      "name": "Nature",
+      "impact_factor": 64.8,
+      "cas_partition": "1区",
+      "jcr_partition": "Q1"
+    }
+  },
+  {
+    "model": "literature.journal",
+    "pk": 2,
+    "fields": {
+      "name": "Science",
+      "impact_factor": 63.7,
+      "cas_partition": "1区",
+      "jcr_partition": "Q1"
+    }
+  },
+  {
+    "model": "literature.journal",
+    "pk": 3,
+    "fields": {
+      "name": "Cell",
+      "impact_factor": 41.5,
+      "cas_partition": "1区",
+      "jcr_partition": "Q1"
+    }
+  },
+  {
+    "model": "literature.journal",
+    "pk": 4,
+    "fields": {
+      "name": "PLOS ONE",
+      "impact_factor": 3.7,
+      "cas_partition": "2区",
+      "jcr_partition": "Q2"
+    }
+  },
+  {
+    "model": "literature.journal",
+    "pk": 5,
+    "fields": {
+      "name": "Scientific Reports",
+      "impact_factor": 4.3,
+      "cas_partition": "2区",
+      "jcr_partition": "Q2"
+    }
+  }
+]

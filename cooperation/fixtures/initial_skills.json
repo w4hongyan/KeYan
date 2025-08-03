@@ -1,0 +1,74 @@
+[
+  {
+    "model": "cooperation.skill",
+    "pk": 1,
+    "fields": {
+      "name": "Python",
+      "category": "编程语言",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "cooperation.skill",
+    "pk": 2,
+    "fields": {
+      "name": "Django",
+      "category": "Web框架",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "cooperation.skill",
+    "pk": 3,
+    "fields": {
+      "name": "React",
+      "category": "前端框架",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "cooperation.skill",
+    "pk": 4,
+    "fields": {
+      "name": "数据分析",
+      "category": "数据科学",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "cooperation.skill",
+    "pk": 5,
+    "fields": {
+      "name": "机器学习",
+      "category": "人工智能",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "cooperation.skill",
+    "pk": 6,
+    "fields": {
+      "name": "文献综述",
+      "category": "学术研究",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "cooperation.skill",
+    "pk": 7,
+    "fields": {
+      "name": "论文写作",
+      "category": "学术研究",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "cooperation.skill",
+    "pk": 8,
+    "fields": {
+      "name": "实验设计",
+      "category": "学术研究",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  }
+]

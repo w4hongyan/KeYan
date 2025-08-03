@@ -1,0 +1,134 @@
+[
+  {
+    "model": "cooperation.cooperationpost",
+    "pk": 1,
+    "fields": {
+      "title": "寻求前端开发合作伙伴",
+      "content": "我们正在开发一个基于React的教育平台，需要熟悉React和TypeScript的前端开发者加入我们的团队。项目周期预计3个月，提供有竞争力的报酬。",
+      "cooperation_type": "collab",
+      "budget": 6500.00,
+      "reward_description": "项目完成后按阶段支付报酬，提供长期合作机会",
+      "requirements": {"experience": "2年以上React开发经验", "duration": "3个月", "location": "远程"},
+      "required_skills": ["React", "TypeScript", "前端开发"],
+      "difficulty_level": "intermediate",
+      "status": "pending",
+      "publisher": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z",
+      "deadline": "2024-04-15T23:59:59Z",
+      "tags": ["React", "教育平台", "前端开发"],
+      "view_count": 45,
+      "application_count": 3
+    }
+  },
+  {
+    "model": "cooperation.cooperationpost",
+    "pk": 2,
+    "fields": {
+      "title": "机器学习算法研究合作",
+      "content": "寻找对自然语言处理感兴趣的研究生或博士生，共同参与学术论文的研究和撰写。我们已有初步的研究成果，希望扩大团队规模。",
+      "cooperation_type": "collab",
+      "budget": 2500.00,
+      "reward_description": "按贡献署名论文，提供研究经费支持",
+      "requirements": {"education": "研究生及以上", "experience": "NLP相关研究经验", "papers": "至少1篇相关论文"},
+      "required_skills": ["机器学习", "自然语言处理", "Python", "学术论文写作"],
+      "difficulty_level": "advanced",
+      "status": "pending",
+      "publisher": 1,
+      "created_at": "2024-01-16T14:30:00Z",
+      "updated_at": "2024-01-16T14:30:00Z",
+      "deadline": "2024-06-30T23:59:59Z",
+      "tags": ["机器学习", "NLP", "学术研究"],
+      "view_count": 28,
+      "application_count": 2
+    }
+  },
+  {
+    "model": "cooperation.cooperationpost",
+    "pk": 3,
+    "fields": {
+      "title": "UI/UX设计项目需求",
+      "content": "需要一位有经验的UI/UX设计师为我们的移动应用重新设计用户界面。要求有教育类产品设计经验，能够独立完成从原型到最终设计的全过程。",
+      "cooperation_type": "collab",
+      "budget": 4000.00,
+      "reward_description": "按设计阶段支付，提供长期设计合作机会",
+      "requirements": {"experience": "3年以上UI/UX设计经验", "tools": "Figma, Sketch", "portfolio": "有教育类产品设计案例"},
+      "required_skills": ["UI设计", "UX设计", "移动应用设计", "Figma"],
+      "difficulty_level": "intermediate",
+      "status": "pending",
+      "publisher": 1,
+      "created_at": "2024-01-17T09:15:00Z",
+      "updated_at": "2024-01-17T09:15:00Z",
+      "deadline": "2024-03-30T23:59:59Z",
+      "tags": ["UI设计", "移动应用", "教育产品"],
+      "view_count": 32,
+      "application_count": 5
+    }
+  },
+  {
+    "model": "cooperation.cooperationpost",
+    "pk": 4,
+    "fields": {
+      "title": "后端API开发工程师",
+      "content": "寻找熟悉Django REST framework的后端工程师，协助完善我们的API接口。项目涉及用户管理、数据统计、文件上传下载等功能模块。",
+      "cooperation_type": "collab",
+      "budget": 5000.00,
+      "reward_description": "按功能模块完成情况支付，提供技术股权机会",
+      "requirements": {"experience": "3年以上Django开发经验", "skills": "REST API, PostgreSQL", "availability": "每周至少20小时"},
+      "required_skills": ["Django", "REST API", "PostgreSQL", "后端开发"],
+      "difficulty_level": "intermediate",
+      "status": "pending",
+      "publisher": 1,
+      "created_at": "2024-01-18T16:20:00Z",
+      "updated_at": "2024-01-18T16:20:00Z",
+      "deadline": "2024-05-20T23:59:59Z",
+      "tags": ["Django", "API开发", "后端"],
+      "view_count": 56,
+      "application_count": 4
+    }
+  },
+  {
+    "model": "cooperation.cooperationpost",
+    "pk": 5,
+    "fields": {
+      "title": "学术论文写作指导",
+      "content": "需要一位有丰富SCI论文写作经验的导师，指导我们团队完成一篇关于人工智能在教育领域应用的学术论文。从选题到投稿全程指导。",
+      "cooperation_type": "collab",
+      "budget": 2000.00,
+      "reward_description": "按论文完成阶段支付指导费用，优秀论文额外奖励",
+      "requirements": {"experience": "发表SCI论文5篇以上", "field": "人工智能教育应用", "service": "全程指导至投稿"},
+      "required_skills": ["学术写作", "SCI论文", "人工智能", "教育技术"],
+      "difficulty_level": "expert",
+      "status": "pending",
+      "publisher": 1,
+      "created_at": "2024-01-19T11:45:00Z",
+      "updated_at": "2024-01-19T11:45:00Z",
+      "deadline": "2024-07-31T23:59:59Z",
+      "tags": ["学术写作", "SCI", "AI教育"],
+      "view_count": 41,
+      "application_count": 7
+    }
+  },
+  {
+    "model": "cooperation.cooperationpost",
+    "pk": 6,
+    "fields": {
+      "title": "数据可视化项目合作",
+      "content": "寻找熟悉D3.js或Echarts的数据可视化专家，帮助我们更好地展示教育数据分析结果。需要制作交互式的数据报表和可视化大屏。",
+      "cooperation_type": "collab",
+      "budget": 3200.00,
+      "reward_description": "按可视化效果支付，提供长期数据合作机会",
+      "requirements": {"experience": "2年以上数据可视化经验", "tools": "D3.js, Echarts", "data": "教育领域数据"},
+      "required_skills": ["数据可视化", "D3.js", "Echarts", "JavaScript"],
+      "difficulty_level": "intermediate",
+      "status": "pending",
+      "publisher": 1,
+      "created_at": "2024-01-20T13:30:00Z",
+      "updated_at": "2024-01-20T13:30:00Z",
+      "deadline": "2024-04-30T23:59:59Z",
+      "tags": ["数据可视化", "D3.js", "教育数据"],
+      "view_count": 19,
+      "application_count": 1
+    }
+  }
+]

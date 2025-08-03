@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直接测试登录API</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .container { border: 1px solid #ddd; padding: 20px; border-radius: 5px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { padding: 10px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+        #response { margin-top: 20px; padding: 10px; background-color: #f5f5f5; border-radius: 4px; white-space: pre-wrap; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>直接测试登录API</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">用户名:</label>
+                <input type="text" id="username" name="username" value="testuser" required>
+            </div>
+            <div class="form-group">
+                <label for="password">密码:</label>
+                <input type="password" id="password" name="password" value="testpassword123" required>
+            </div>
+            <button type="submit">登录</button>
+        </form>
+        <div id="response"></div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const responseDiv = document.getElementById('response');
+            responseDiv.innerHTML = '正在发送请求...';
+            responseDiv.className = '';
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // 使用FormData模拟表单提交
+            const formData = new FormData();
+            formData.append('username', username);
+            formData.append('password', password);
+
+            fetch('http://localhost:8000/api/login/', {
+                method: 'POST',
+                body: formData,
+                credentials: 'include'  // 包含cookie
+            })
+            .then(response => {
+                // 记录响应状态和头信息
+                let responseInfo = `状态码: ${response.status}\n`;
+                responseInfo += '响应头:\n';
+                for (const [key, value] of response.headers.entries()) {
+                    responseInfo += `${key}: ${value}\n`;
+                }
+
+                // 尝试获取响应体
+                return response.text().then(text => {
+                    responseInfo += '\n响应内容:\n';
+                    try {
+                        // 尝试解析为JSON
+                        const jsonData = JSON.parse(text);
+                        responseInfo += JSON.stringify(jsonData, null, 2);
+                    } catch (e) {
+                        responseInfo += text || '空响应';
+                    }
+
+                    responseDiv.textContent = responseInfo;
+
+                    if (response.ok) {
+                        responseDiv.classList.add('success');
+                    } else {
+                        responseDiv.classList.add('error');
+                    }
+                });
+            })
+            .catch(error => {
+                responseDiv.textContent = `请求失败: ${error.message}`;
+                responseDiv.classList.add('error');
+            });
+        });
+    </script>
+</body>
+</html>
