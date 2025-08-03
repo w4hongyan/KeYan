@@ -9,6 +9,9 @@ import Register from './pages/Register';
 import NotFound from './pages/NotFound';
 import UserProfile from './pages/UserProfile';
 import Statistics from './pages/Statistics';
+import ResearchTools from './pages/ResearchTools';
+import PlagiarismCheck from './pages/PlagiarismCheck';
+import JournalImpact from './pages/JournalImpact';
 import PrivateRoute from './components/PrivateRoute';
 import './App.css';
 
@@ -42,6 +45,15 @@ const App: React.FC = () => {
                 <Link to="/statistics" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                   统计分析
                 </Link>
+                <Link to="/research-tools" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                  科研工具
+                </Link>
+                <Link to="/plagiarism-check" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                  查重服务
+                </Link>
+                <Link to="/journal-impact" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                  期刊查询
+                </Link>
               </div>
             </div>
           </div>
@@ -58,6 +70,9 @@ const App: React.FC = () => {
             <Route path="/literature" element={<Literature />} />
             <Route path="/profile" element={<PrivateRoute><UserProfile /></PrivateRoute>} />
             <Route path="/statistics" element={<PrivateRoute><Statistics /></PrivateRoute>} />
+            <Route path="/research-tools" element={<PrivateRoute><ResearchTools /></PrivateRoute>} />
+            <Route path="/plagiarism-check" element={<PrivateRoute><PlagiarismCheck /></PrivateRoute>} />
+            <Route path="/journal-impact" element={<PrivateRoute><JournalImpact /></PrivateRoute>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
